@@ -61,7 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'chat-bubble': 'hsl(var(--chat-bubble))',
+				'chat-bubble-secondary': 'hsl(var(--chat-bubble-secondary))',
+				'online-status': 'hsl(var(--online-status))',
+				'away-status': 'hsl(var(--away-status))',
+				'offline-status': 'hsl(var(--offline-status))',
+				'video-bg': 'hsl(var(--video-bg))',
+				'video-controls': 'hsl(var(--video-controls))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
