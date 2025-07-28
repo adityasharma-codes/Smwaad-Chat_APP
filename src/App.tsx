@@ -16,11 +16,15 @@ const queryClient = new QueryClient();
 
 const AppContent = () => {
   const location = useLocation();
-  const hideNavbar = location.pathname === "/login" || location.pathname === "/signup";
+
+  // Define paths where the Navbar should be hidden
+  const hideNavbarRoutes = ["/", "/signup"];
+  const hideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
     <div className="min-h-screen bg-background">
       {!hideNavbar && <Navbar />}
+
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Login />} />
